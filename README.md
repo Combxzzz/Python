@@ -2,9 +2,9 @@
 
 Diretorios feito para publicar :
 
-* Exercicios
-* Progresso dos Curso
+* Exercícios 
+* Progresso dos Cursos
 * Projetos
 * Testes
 
-Tudo relacionado a Python no geral
+Tudo relacionado a Python no geral. 
