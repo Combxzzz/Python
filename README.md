@@ -1,10 +1,10 @@
 # Python
 
-Diretorios feito para publicar :
+Diretorio feito para publicar :
 
-* Exercicios
-* Progresso dos Curso
+* Exercícios 
+* Cursos
 * Projetos
 * Testes
 
-Tudo relacionado a Python no geral
+Tudo relacionado a Python no geral. 
