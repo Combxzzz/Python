@@ -17,11 +17,11 @@ class Canal:
     
 
 
-MTG = Canal("MTG", 0, "puro suco do autismo", "vcs sao burros pra krl")
+MTG = Canal("MTG", 0, "puro suco do entretenimento", "teste de comentario")
 
 print(MTG)
 
 MTG.escrever_se(5)
-MTG.mudar_descricao("gays gameplay")
+MTG.mudar_descricao("gameplays legais👍")
 
 print(MTG)
