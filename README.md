@@ -1,9 +1,9 @@
 # Python
 
-Diretorios feito para publicar :
+Diretorio feito para publicar :
 
 * Exercícios 
-* Progresso dos Cursos
+* Cursos
 * Projetos
 * Testes
 
