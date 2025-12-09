@@ -24,3 +24,4 @@ print("-"*20)
 
 for pos, comida in enumerate(lanche):
     print(f"posição {pos}, comida {comida}")
+    # Exibe o index e o nome do elemento
