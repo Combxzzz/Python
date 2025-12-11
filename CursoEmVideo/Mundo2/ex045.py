@@ -1,33 +1,23 @@
 import random
 
-choiceUser = None
-choiceMachi = None
-
 opcoes = ["pedra" , "tesoura" , "papel"]
 
-print("Escolha uma das opcoes abaixo\n")
-
-user = int(input("""
-1 - pedra
-2 - tesoura
-3 - papel\n
-                 
-escolha:
-"""))
+print("Suas opcoes: \n[ 1 ] pedra\n[ 2 ] tesoura\n[ 3 ] papel")
+user = int(input("Qual e a sua escolha? \nEscolha: "))
 
 choiceMachi = random.choice(opcoes)
 choiceUser = opcoes[user - 1]
 
-print("\nescolha da maquina: {}\n".format(choiceMachi))
-print("\nsua escolha: {}\n".format(choiceUser))
+print("escolha da maquina: {}".format(choiceMachi))
+print("sua escolha: {}".format(choiceUser))
 
 if choiceMachi == choiceUser:
-    print("empate")
+    print("Resultado: Empate")
 elif (
     (choiceUser == "pedra" and choiceMachi == "tesoura") or 
     (choiceUser == "tesoura" and choiceMachi == "papel") or 
     (choiceUser == "papel" and choiceMachi == "pedra")
 ):
-    print("voce ganhou")
+    print(f"Voce venceu, {choiceUser} vence {choiceMachi}")
 else:
-    print("voce perdeu")
+    print(f"Voce perdeu, {choiceMachi} vence {choiceUser}")
