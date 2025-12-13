@@ -11,3 +11,5 @@ jogador1.usar_magia("cura", jogador1)
 
 print(jogador1)
 print(goblin1)
+
+# ainda em desenvolvimento
