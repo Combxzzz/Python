@@ -6,7 +6,7 @@ jogador1 = Jogador("Aragorn", "Guerreiro")
 goblin1 = Goblin("Goblin Malvado")
 jogador1.atacar(goblin1)
 goblin1.atacar(jogador1)
-jogador1.usar_magia("relampago", goblin1)
+jogador1.usar_magia("bola_de_fogo", goblin1)
 jogador1.usar_magia("cura", jogador1)
 
 print(jogador1)
