@@ -1,12 +1,11 @@
-Ndig = 0
-Soma = 0
-
+soma = 0
+numeros_digitados = 0
 while True:
-    N1 = int(input("Digite um numero: "))
-    if N1 == 999:
+    numero = int(input("Digite um numero (999 para parar): "))
+    if numero == 999:
         break
-    Ndig += 1
-    Soma += N1
+    soma += numero
+    numeros_digitados += 1
 
-print(f"Numeros digitados: {Ndig}")
-print(f"A soma é: {Soma}")
+
+print(f"Voce digitou {numeros_digitados} numeros e a soma entre eles foi {soma}.")

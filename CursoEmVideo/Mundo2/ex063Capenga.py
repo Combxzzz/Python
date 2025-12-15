@@ -25,3 +25,7 @@ for i in range(n1, 0, -1):
 
 # print(final)
 print(f"esses sao os {n1 + 2} termos da sequencia.")
+
+# Que codigo feio meu Deus do ceu
+# Bom saber que eu sai disso aqui pra oque ta nos outros ex63 💀
+# Deixar aqui so pra lembrar que eu realmente melhorei

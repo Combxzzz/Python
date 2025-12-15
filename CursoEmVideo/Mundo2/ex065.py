@@ -1,41 +1,32 @@
-Ndig = 0
+contador = 0
 soma = 0
-Me = None
-Ma = None
+menor = None
+maior = None
 
 while True:
-    n1 = float(input("Digite um numero: "))
-    Ndig += 1
-    soma += n1
+    numero = float(input("Digite um número: "))
+    soma += numero
+    contador += 1
 
-    if Me is None:
-        Me = n1
-    else:
-        if n1 <= Me:
-            Me = n1
+    if menor is None or numero < menor:
+        menor = numero
 
-    if Ma is None:
-        Ma = n1
-    else:
-        if n1 >= Ma:
-            Ma = n1
+    if maior is None or numero > maior:
+        maior = numero
 
-    op = input("Quer continuar? [S/N]: ").upper()
-    while op not in ["S","N"]:
-        print("Opçao invalida!")
-        op = input("Quer continuar? [S/N]: ").upper()
+    opcao = input("Quer continuar? [S/N]: ").strip().upper()
+    while opcao not in ("S", "N"):
+        print("Opção inválida!")
+        opcao = input("Quer continuar? [S/N]: ").strip().upper()
 
-    if op == "N" and Ndig < 2:
-        print("Digite mais de 2 numeros...")
-        Ndig = 0
-        Me = None
-        Ma = None
-        continue
-
-    if op == "N":
+    if opcao == "N":
+        if contador < 2:
+            print("Digite pelo menos 2 números.")
+            continue
         break
 
+media = soma / contador
 
-print(f"A media de todos os numeros é {soma/Ndig}")
-print(f"Menor: {Me}")
-print(f"Maior: {Ma}")
+print(f"Media dos numeros: {media}")
+print(f"Menor valor: {menor}")
+print(f"Maior valor: {maior}")
