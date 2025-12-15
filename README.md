@@ -1,10 +1,2 @@
-# Python
-
-Diretorio feito para publicar :
-
-* Exercícios 
-* Cursos
-* Projetos
-* Testes
-
-Tudo relacionado a Python no geral. 
+Repositório com exercícios e exemplos do curso Python do Curso em Vídeo.
+Utilizado para estudo de lógica, POO e fundamentos da linguagem.
