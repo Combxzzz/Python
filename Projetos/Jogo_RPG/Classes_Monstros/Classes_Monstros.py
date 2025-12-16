@@ -1,8 +1,9 @@
 import random
+
 class Goblin:
     def __init__(self, nome = "Goblin"):
         self.nome = nome
-        self.vida = random.randint(20, 40)
+        self.vida = 100
         self.forca = random.randint(3, 6)
         self.agilidade = random.randint(2, 5)
         self.inteligencia = random.randint(1, 3)
