@@ -1,41 +1,77 @@
-lanche = ("Hamburguer", "Suco", "Pizza", "Pudim")
+# Aula16 - Tuplas em Python
 
-#indices       0          1        2        3
-#indices      -4         -3       -2       -1
+# -------------------------------------------------------------------
+# Tuplas são estruturas de dados IMUTÁVEIS.
+# Isso significa que, depois de criadas, NÃO podem ser alteradas.
+# São representadas por parênteses ().
+# -------------------------------------------------------------------
 
-# tuplas são imutaveis
-# lanche[1] = "Refrigerante" # Isso gera um erro
-# lanche.append("Refrigerante") # Isso gera um erro
-print(lanche[0]) #Pega o primeiro elemento
-print(lanche[-2]) #Pega o penultimo elemento
-print(lanche[1:3]) #Desconsidera o ultimo elemento
-print(lanche[2:]) #Elemento 2 ate o final
-print(lanche[:2]) #Pega do primeiro elemento ate o elemento 1
-print(lanche[-3:]) #Começa no suco e vai até o final
-print(len(lanche)) #Mostra o numero de itens
-print(sorted(lanche)) #Mostra a lista organizada
+# Criando uma tupla simples
+lanche = ("Hambúrguer", "Suco", "Pizza", "Pudim")
 
-# metodos para tuplas são limitados
-# lanche.count("Pizza") #Conta quantas vezes o elemento aparece na tupla
-# lanche.index("Pudim") #Mostra a posição do elemento na tupla
-# esses são os unicos metodos para tuplas
+# Mostrando a tupla completa
+print(lanche)
 
-print("-"*20)
+# ---------------------------------------------------------
+# ACESSANDO ELEMENTOS DA TUPLA
+# ---------------------------------------------------------
 
-# podemos percorrer uma tupla com o for
+# Acessando elementos pelo índice
+print(lanche[0])    # primeiro elemento
+print(lanche[2])    # terceiro elemento
 
-for c in lanche:
-    print(c)
-    #exibe cada item na tupla
+# Acessando do fim para o início
+print(lanche[-1])   # último elemento
 
-print("-"*20)
+# Fatiamento da tupla (funciona igual string)
+print(lanche[1:3])  # do índice 1 ao 2
 
-for cont in range(0, len(lanche)):
-    print(lanche[cont])
-    # exibe cada item na tupla usando o indice como referencia
+# ---------------------------------------------------------
+# PERCORRENDO TUPLAS COM FOR
+# ---------------------------------------------------------
 
-print("-"*20)
+print("\nPercorrendo a tupla:")
+for comida in lanche:
+    print(f"Eu vou comer {comida}")
 
+# Percorrendo usando índices
+print("\nPercorrendo com índices:")
+for pos in range(0, len(lanche)):
+    print(f"Na posição {pos} temos {lanche[pos]}")
+
+# Percorrendo usando enumerate
+print("\nUsando enumerate:")
 for pos, comida in enumerate(lanche):
-    print(f"posição {pos}, comida {comida}")
-    # Exibe o index e o valor da tupla
+    print(f"Na posição {pos} está {comida}")
+
+# ---------------------------------------------------------
+# FUNÇÕES ÚTEIS COM TUPLAS
+# ---------------------------------------------------------
+
+# len() — tamanho da tupla
+print(f"\nA tupla tem {len(lanche)} elementos.")
+
+# count() — conta quantas vezes um item aparece
+print(f"'Pizza' aparece {lanche.count('Pizza')} vez(es).")
+
+# index() — mostra a posição da primeira ocorrência
+print(f"'Suco' está na posição {lanche.index('Suco')}.")
+
+# ---------------------------------------------------------
+# TUPLAS COM NÚMEROS
+# ---------------------------------------------------------
+
+numeros = (4, 2, 9, 1, 5, 2)
+
+print("\nTupla de números:", numeros)
+
+# maior e menor valor
+print(f"Maior valor: {max(numeros)}")
+print(f"Menor valor: {min(numeros)}")
+
+# soma dos valores
+print(f"Soma dos valores: {sum(numeros)}")
+
+# ---------------------------------------------------------
+# TUPLAS SÃO IMUTÁVEIS
+# ---------------------------------------------------------
